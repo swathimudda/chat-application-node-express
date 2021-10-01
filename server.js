@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
 mongoose.Promise = Promise
-var dbUrl = "mongodb+srv://mssd:mssd@cluster0.fhkxn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+var dbUrl = DATABASE_URL;
 var Message = mongoose.model('Message', {
     name: String,
     message: String
